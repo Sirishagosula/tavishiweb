@@ -1,0 +1,139 @@
+
+.about{  padding: 80px;
+  font-size: larger;
+}
+
+
+.heading{
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+    font-weight: bold;
+    margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  overflow: hidden;
+  justify-content:space-around;
+  background-repeat: no-repeat;
+  background-size: 50%;
+ 
+  
+}
+  @keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+  }
+
+.heading:hover{
+  animation: wavy 1s infinite;
+}
+.about-subtitle
+{
+   
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  padding-left: 10px;
+  text-align:center;
+  padding-top: 10px;
+}
+  .about-subtitle:hover{
+    animation: wavy 1s ease-out;
+  }
+.about-image{
+    width: 40%;
+    height:400px;    
+    padding-left: 600px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 960px) {
+    .about-image{
+        width: 80%;
+        padding-left: 80px;
+        padding-bottom: 20px;
+    }
+    .about{
+      padding-top: 80px;
+      padding-left: 60px;
+    }
+    .about-subtitle
+{
+    padding-left: 0px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: larger;
+  
+}
+        
+        .heading{
+            padding-left: 0px;
+            padding-top: 60px;
+            font-size: 60px;
+            
+        }
+        
+}
+/* slider */
+h2{
+  text-align:center;
+  margin-top: 80px;
+  padding-top: 100px;
+}
+.slide 
+{
+  padding-left: 100px;
+}
+.slide img {
+  width: 100px;
+  height: 100px;
+  
+  animation: scroll 5s linear infinite;
+}
+
+.slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+
+.slider {
+  margin-top: 10px;
+  background-color: white;
+  padding: 8em 2em 9em;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translatex(-1000%)}
+}
+.about{
+  padding-top: 80px;
+  padding-left: 100px;
+}
+.title {
+  margin-top: 10px;
+  font-size: 60px;
+  padding-left: 50px;
+  padding-top: 10px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 54px;
+  color: #666;
+  padding-left: 200px;
+
+}
+
+.content {
+  padding-top: 90px;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
