@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6b36e03c.css",
+    "main.js": "/static/js/main.6d68f67a.js",
+    "static/js/453.a12ce418.chunk.js": "/static/js/453.a12ce418.chunk.js",
+    "static/media/workshop.jpg": "/static/media/workshop.98e3f7ef6446a499489c.jpg",
+    "static/media/about.png": "/static/media/about.d71121edd870888a76ff.png",
+    "static/media/work3.png": "/static/media/work3.b6a5e4f69ce608e08030.png",
+    "static/media/work2.png": "/static/media/work2.8cb7e63bae9a4719c82c.png",
+    "static/media/work5.png": "/static/media/work5.94a93380bd1db2e85496.png",
+    "static/media/work4.png": "/static/media/work4.4b881c7fb704cc20b1d6.png",
+    "static/media/services.png": "/static/media/services.9791106b8bab8c5f2386.png",
+    "static/media/work1.jpg": "/static/media/work1.4355559c2554e6cea61e.jpg",
+    "static/media/react.png": "/static/media/react.daae3e094212712ac94b.png",
+    "static/media/next.png": "/static/media/next.88c396f8b2e63bfa337e.png",
+    "index.html": "/index.html",
+    "main.6b36e03c.css.map": "/static/css/main.6b36e03c.css.map",
+    "main.6d68f67a.js.map": "/static/js/main.6d68f67a.js.map",
+    "453.a12ce418.chunk.js.map": "/static/js/453.a12ce418.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b36e03c.css",
+    "static/js/main.6d68f67a.js"
+  ]
+}
