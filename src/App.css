@@ -1,0 +1,14 @@
+.App{
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
