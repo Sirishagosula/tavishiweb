@@ -1,0 +1,282 @@
+/* services.css */
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+  
+  .left-column {
+    width: 50%;
+    padding: 20px;
+    padding-left: 40px;
+  }
+  
+  .right-column {
+    width: 50%;
+  }
+  
+  .small-heading {
+    font-size: 20px;
+    font-weight: 700px;
+  }
+  
+  .big-heading {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .big-heading:hover{
+    animation: wavy 1s infinite;
+  }
+  
+  .paragraph {
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 16px;
+  }
+  .paragraph:hover{
+    animation: wavy 1s infinite;
+  }
+  
+  .hire-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  .scrolling-text-container {
+    position: relative;
+  }
+  
+  .scrolling-text {
+    font-size: 4em;
+    padding-top: 200px;
+    font-weight: 700;
+    animation: scrollText 3s linear infinite;
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .scrolling-text br {
+    display: none;
+  }
+  
+  .scrolling-text::after {
+    content: ' ';
+    white-space: pre;
+  }
+  .nav-button-services
+  {
+    background-color: #aeb2b5;
+    padding: 6px 10px 6px 10px;
+    text-decoration: none;
+  }
+  /* timeline */
+:root {
+  --white: #fff;
+  --black: #323135;
+  --crystal: #a8dadd;
+  --columbia-blue: #cee9e4;
+  --midnight-green: #01565b;
+  --yellow: #e5f33d;
+  --timeline-gradient: rgba(206, 233, 228, 1) 0%, rgba(206, 233, 228, 1) 50%,
+    rgba(206, 233, 228, 0) 100%;
+}
+
+
+.timeline {
+  position: relative;
+  white-space: nowrap;
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px auto;
+  grid-gap: 20px;
+}
+
+
+.timeline ol::-webkit-scrollbar {
+  height: 9px;
+}
+
+.timeline ol::-webkit-scrollbar-thumb,
+.timeline ol::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.timeline ol::-webkit-scrollbar-thumb {
+  background: var(--white);
+}
+
+.timeline ol::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 1000px;
+  padding: 250px 0;
+  transition: all 1s;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: var(--black) var(--white);
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 5px;
+  background: var(--yellow);
+  scroll-snap-align: start;
+}
+
+.timeline ol li:last-child {
+  width: 340px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--black);
+  z-index: 1;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: var(--black);
+  background: var(--white);
+  border-radius: 0 10px 10px 10px;
+}
+
+.timeline ol li div::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+  border-radius: 10px 10px 10px 0;
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: var(--white) transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent var(--white);
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--black);
+}
+
+@media screen and (max-width: 960px) {
+  
+  .timeline {
+    display: block;
+  }
+
+  .timeline::before,
+  .timeline::after {
+    width: 0px;
+  }
+
+  .timeline::before {
+    left: 0;
+  }
+
+  .timeline .info {
+    display: none;
+  }
+  
+}
+
+.page-footer {
+ 
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  z-index: 2;
+  color: var(--black);
+  background: var(--black);
+}
+
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
+}
+.service-end{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+}
+.service-end h1{
+  padding-left: 400px;
+}
+.service-end h3{
+  padding-left: 300px;
+}
+.service-end .nav-button{
+  align-content: end;
+  padding-left: 10px;
+  left: 10px;
+  margin-left: 500px;
+}

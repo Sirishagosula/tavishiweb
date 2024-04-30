@@ -1,0 +1,44 @@
+.workshop-image{
+    width: 600px;
+    height: 400px;
+  
+    padding-top: 100px;
+}
+.workshop{
+    padding-top: 100px;
+    padding-left: 90px;
+   
+    text-align: center;
+}
+.workshop h1{
+ padding-right: 30px;
+    text-align: center;
+}
+.container {
+ display: flex;
+    
+    margin-top: 20px;
+}
+.box {
+    padding-right: 40px;
+    width: 40%;
+    padding-right: 10px;
+    border-bottom: 1px solid rgb(222, 218, 218);
+    border-top: 1px solid rgb(222, 218, 218);
+    box-sizing: border-box;
+}
+.box h2 {
+    margin-top: 0;
+}
+.box p {
+    padding-bottom: 40px;
+   
+    text-align: left;
+}
+.heading-workshop{
+    padding-top: 0px;
+    border-bottom: 1px solid rgb(222, 218, 218);
+}
+.heading-work{
+    padding-left: 30px;
+}

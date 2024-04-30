@@ -1,0 +1,101 @@
+.main-content {
+  border-radius: 20px;
+  display: inline;
+  margin-left: 10px; 
+  width:700px;
+  padding-left: 100px;
+  padding-right: 140px;
+  border: 0px solid rgb(136, 138, 138);
+  background-color: #dcdedf;
+  padding-bottom: 20px;
+  margin: 100px;
+}
+
+.contact-heading {
+  color: #333;
+}
+
+.need-section {
+  margin-bottom: 30px;
+}
+
+.domain-boxes {
+ display:flex;
+ column-gap: 10px;
+ row-gap: 10px;
+ flex-direction: row;
+ margin-top: 30px; 
+ flex-wrap: wrap;
+}
+
+.domain-box {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px 20px 20px 20px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.domain-box.selected {
+  background-color: #3b3b3b;
+  color: #fff;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="submit"],
+.contact-form textarea {
+  width: 800px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 180px;
+}
+
+.budget-estimation {
+  margin-bottom: 20px;
+}
+
+.budget-boxes {
+  display: flex;
+  margin-top: 10px;
+}
+
+.budget-box {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.budget-box.selected {
+  background-color: #434343;
+  color: #fff;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #363736;
+  width: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #7e7e7e;
+}
+@media screen and (max-width:960px) 
+{
+  .main-content {
+    margin: 0;
+    margin-top: 20px;
+    width:1000px;
+    padding-left: 30px;
+  }
+  
+}

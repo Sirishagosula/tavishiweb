@@ -1,0 +1,136 @@
+
+.home-container{
+    padding: 80px;
+    font-size: larger;
+}
+.head{   
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 60px;
+    font-weight: bold;
+    margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        overflow: hidden;
+        justify-content:space-around;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        animation: slideIn 1s ease-out;
+}
+        @keyframes slideIn {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(0); }
+        }
+        .head:hover{
+          animation: wavy 1s infinite;
+        }
+      
+       
+        
+.text
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    padding-left: 10px;
+    text-align:center;
+    padding-top: 10px;
+}
+    .text:hover{
+      animation: wavy 1s infinite;
+    }
+
+
+@media screen and (max-width: 960px) {
+.head{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    padding-left: 20px;
+}
+.text
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.work{
+  align-items: center;
+  padding-top: 50px;
+}
+.work1{
+  width: 100%;
+}
+.work1::after{
+  -webkit-transform: scale(6);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+
+}
+.work{
+  align-items: center;
+  padding-top: 100px;
+}
+.work1{
+  width: 50%;
+}
+.work1:hover{
+  -webkit-transform: scale(1);
+	transform: scale(1.1);
+}
+.work2{
+   width: 50%;
+  padding-left: 500px;
+}
+.work2:hover{
+  -webkit-transform: scale(1);
+	transform: scale(1.1);
+}
+
+.work3{
+  width: 50%;
+  padding-right: 500px; 
+}
+.work3:hover{
+  -webkit-transform: scale(1);
+	transform: scale(1.1);
+}
+.work4{
+  width: 50%;
+  padding-left: 500px;
+}
+.work4:hover{
+  -webkit-transform: scale(1);
+	transform: scale(1.1);
+}
+.work5{
+  width: 50%;
+  padding-right: 500px;
+}
+
+.work5:hover{
+  -webkit-transform: scale(1);
+	transform: scale(1.1);
+}
+.head2{
+  align-items: baseline;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  overflow: hidden;
+  justify-content:space-around;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+  .head2:hover{
+    animation: wavy 1s infinite;
+  }
+
+ 
