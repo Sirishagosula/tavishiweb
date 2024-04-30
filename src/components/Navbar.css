@@ -1,0 +1,169 @@
+.navbar {
+    background:white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+   
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+  }
+  
+  .container {
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+  } 
+  .nav-menu {
+    display: flex;
+    padding-right: 100px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    justify-content: flex;
+  }
+  
+  .nav-item {
+    height: 60px;
+    padding-top: 4px;
+     font-size:medium;
+  }
+  
+  .nav-item:hover {
+   transition: transform 20ms;
+   transform: scaleY(1.1); 
+  }
+  .nav-button{
+ margin-left: 10px;
+ margin-right: 1px;
+  background-color: #bfa8e9;
+  text-decoration: none;
+  margin-top: 10px;
+    border: none;
+  padding: 5px 5px 5px 5px;
+  }
+  .nav-links {
+    color: #0e0808;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  
+    height: 100%;
+    
+        }
+        .nav-links:hover{
+          animation: wavy 1s infinite;
+     
+    
+  }
+  @keyframes wavy{
+    0%, 40%,100% {
+      transform : translate(1);
+          }
+          50%
+          {
+            transform:translateY(-20px);
+            
+            
+          }
+        }
+ .nav-logo{
+  padding-top: 20px;
+ }
+  .nav-logo:hover{
+    animation: wavy 1s infinite;
+  }
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-top: 5rem;
+      padding-bottom: 30rem;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+ 
+    .nav-menu.active {
+      background:white;
+      left: 0;
+      opacity: 1;
+      transition: all 0.6s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 1.2rem;
+      width: 90%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+    
+       transform: scale(1.2); 
+      transition: all .1s ease;
+      animation-duration: 3s;
+      animation-direction: reverse;
+    }
+  
+    .nav-item:hover {
+      background-color: #eaeaee;
+
+    }
+  
+    .nav-item {
+      width: 100%;
+      padding-top: 0%;
+
+    }
+
+    .nav-button{
+        padding: 1rem;
+        background-color: #b889e7;
+        border: none;
+        padding: 5px 5px 5px 5px;
+        justify-content: center;
+        margin-right:1px;
+        margin-left: 1px;
+    
+    
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    
+  
+ 
+  }
